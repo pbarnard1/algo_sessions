@@ -2,4 +2,6 @@
 /Templates
 /JanFeb2021
 technical_algos.txt
-test.py
+*.py
+*.java
+*.class

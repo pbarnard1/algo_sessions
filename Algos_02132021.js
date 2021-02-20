@@ -12,6 +12,8 @@ For the next four weeks, we will go over the basics of JavaScript and what are c
 algos that you have hopefully nail down quickly by the time you graduate from Coding Dojo.
 */
 
+// Take it nice and slow - you'll get the hang of this soon enough!  Be patient, and don't be afraid to ask!
+
 /* Introduction to JavaScript:
 Variables:
 - MUST start with a letter
@@ -49,8 +51,12 @@ var z1 = parseInt(z); // z1 now is the *numerical value* 35
 console.log(isHappy); // prints "true" since the variable isHappy holds the value "true"
 console.log("Hello world!");
 console.log('This is a string');
-var b1 = 25;
+var b1 = 8;
+function printFavoriteNumber(x) {
+    console.log(`My favorite number is ${x}`);
+}
 console.log(`My favorite number is ${b1}, and 3 + 5 is ${3 + 5}`);
+printFavoriteNumber(42);
 
 // Commenting code: done two ways
 // "//" is for commenting code for that line only
@@ -97,16 +103,10 @@ for (var p1 = 2; p1 < 17; p1 += 3) {
     console.log(p1);
 }
 console.log(p1); // p1 is 17
+// T diagram example below:
 // variable name | value
 // ---------------------- 
 //      p1       |   17
-
-// If time permits - if statements
-
-// Demonstrate T diagrams
-// Show a few ways to run code
-// Take it nice and slow - you'll get the hang of this soon enough!  Be patient, and don't be afraid to ask!
-// Have Q&A session at end to open up for questions
 
 // Handy references:
 // W3, Mozilla, Python Tutor, Eloquent JavaScript, many others as well
