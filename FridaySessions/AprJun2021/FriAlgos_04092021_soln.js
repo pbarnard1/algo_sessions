@@ -208,6 +208,9 @@ class Stack {
 
     // Pop: Remove and return the topmost node
     pop() {
+        if (!this.top) { // If no nodes to remove, exit
+            return null;
+        }
         var removedNode = this.top; // Grab the topmost node
         this.top = removedNode.next; // Move top pointer to next node in stack, which is now the new top
         removedNode.next = null; // Disconnect node from stack
@@ -331,6 +334,9 @@ class Queue {
     
     // Dequeue: Remove & return the node at the front of the queue
     dequeue() {
+        if (!this.front) { // If no nodes to remove, exit
+            return null;
+        }
         var removedNode = this.front; // Oldest node is at the front
         this.front = removedNode.next; // Move front to next oldest node (or null if that's the only node)
         if (!this.front) { // If there was only one node, have the back point to null as well
