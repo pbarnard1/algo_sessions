@@ -29,10 +29,10 @@ Examples: "Mississippi", "s", 3 returns true since we have at least 3 occurrence
 
 /* Challenge 4: Is Word Alphabetical
 (From Learning Platform, found in Projects & Algorithms section)
-Nikki, a queen of gentle sarcasm, loves the word facetiously. Lance helpfully points out that it is the only known 
-English word that contains all five vowels in alphabetical order, and it even has a ‘y’ on the end! 
-Nikki takes a break from debugging to turn and give him an acid stare – indeed a look that was delivered arseniously. 
-Given a string, return whether all contained letters are in alphabetical order.
+Given a string, return true if all contained letters are in alphabetical order and false otherwise.
+Start with words with no punctuation, all lower case.
+For a bonus, ignore case sensitivity.
+As a final challenge, have the function ignore punctuation, spaces, etc.
 */
 
 /* Challenge 5: Matrix Search
@@ -43,13 +43,56 @@ two-dimensional array represents a black-and-white image, where each integer val
 The second matrix might be a subset of the larger one. Return whether the second image is found
 within the larger one.
 
+Example:
+var largerMatrix =[
+    [10,15,20,25],
+    [15,25,18,14],
+    [88,14,24,84],
+    [22,34,49,55]
+];
+var smallerMatrix = [
+    [18,14],
+    [24,84]
+]
+This returns true.
 */
 
 // Object challenges
 
 /* Challenge 6: Scrabble score
 Given a string representing a word and an object representing how many points each letter is worth, return
-how many points the word would score.
+how many points the word would score.  Note the word is case-insensitive.
+
+Example:
+var scoreObj = {
+    'A': 1,
+    'B': 3,
+    'C': 3,
+    'D': 2,
+    'E': 1,
+    'F': 4,
+    'G': 2,
+    'H': 4,
+    'I': 1,
+    'J': 8,
+    'K': 5,
+    'L': 1,
+    'M': 3,
+    'N': 1,
+    'O': 1,
+    'P': 3,
+    'Q': 10,
+    'R': 1,
+    'S': 1,
+    'T': 1,
+    'U': 1,
+    'V': 4,
+    'W': 4,
+    'X': 8,
+    'Y': 4,
+    'Z': 10
+}
+The word "help" with scoreObj would return 4+1+1+3 = 9 points.
 */
 
 /* Challenge 7: Hall Monitor
@@ -72,7 +115,7 @@ D = door, H = hall
             |     |           |     |
       ------|     -------------     |
       |     |                       |
-      |  8  D           H           |            
+      |  8  D           H           |
       |     |                       |
       -------------------------------
 
