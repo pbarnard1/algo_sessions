@@ -48,7 +48,7 @@ and returns the balance index or -1 if it cannot be found.
 Example:
 [3, 4, 5, -2, 9] returns 2 since 3 + 4 = 7 and -2 + 9 = 7; index 2 is where we separate the two
 [4, 3, 7] returns -1
-[3, 3] returns - 1
+[3, 3] returns -1
 [1, 2, 3, 5, 6] returns 3 since 1 + 2 + 3 = 6 and we only have 6 to the right
 */
 
